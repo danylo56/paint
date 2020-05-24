@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Paint</title>
+</head>
+<body>
+    <div class="preferences">
+        <div class="container">
+
+            <div class="sizer">
+                <form id="formSize">
+                    <input id="cursorSize" name="size" type="range" list="tickmarks" min="2" step="2" max="30">
+                    <datalist id="tickmarks">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50">
+                    </datalist>
+                </form>
+                
+
+                <div id="cursorExample"></div>
+            </div>
+
+            <div class="controls">
+                <button id="saveBtn">Save</button>
+                <button id="replayBtn">Replay</button>
+                <button id="clearBtn">Clear</button>
+            </div>                
+
+            <form id="palette" >
+
+                    <label class="colorbox" id="redL" for="red"></label>
+                    <input name="color" id="red" value="red" type="radio" >
+
+                    <label class="colorbox" id="blueL" for="blue"></label>
+                    <input name="color" id="blue" value="blue" type="radio" >
+
+                    <label class="colorbox" id="yellowL" for="yellow"></label>
+                    <input name="color" id="yellow" value="yellow" type="radio" >
+
+                    <label class="colorbox" id="greenL" for="green"></label>
+                    <input name="color" id="green" value="green" type="radio" >
+
+                    <label class="colorbox" id="pinkL" for="pink"></label>
+                    <input name="color" id="pink" value="pink" type="radio" >
+
+                    <label class="colorbox choosen" id="blackL" for="black"></label>
+                    <input name="color" id="black" checked value="black" type="radio" >
+                </form>
+        </div>
+
+    </div>
+    <canvas id="canvas">Upps... So sorry but your browser doesn't support canvas</canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.preferences{
+    display: flex;
+    height: 64px;
+    background-color: whitesmoke;
+}
+
+.container{
+    min-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sizer{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cursorExample{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+
+#palette{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colorbox{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.choosen{
+    box-shadow: 0 0 5px blue;
+    border: 1px solid blue;
+}
+
+#canvas{
+    display: block;
+}
